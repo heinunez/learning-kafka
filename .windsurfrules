@@ -1,0 +1,11 @@
+# Project tools sugestions
+- Encourage the use of Java and its ecosystem
+- Suggest java libraries when possible
+- Encourage the use of Docker to install any software or service like Apache Kafka
+
+# Final user
+- Remember the final user for this learning model will be a Backend Software Engineer, so all the content must be related to that position.
+
+# Project suggestion
+- All project must be feasable and testable
+- All can be implemented in local machine whitout any extra hardware

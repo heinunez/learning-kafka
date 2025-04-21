@@ -1,0 +1,104 @@
+- Part 1
+  - 1 Welcome to the Kafka event streaming platform
+    - 1.1 Event streaming
+    - 1.2 What is an event?
+    - 1.3 An event stream example
+    - 1.4 Introducing the Apache Kafka event streaming platform
+    - 1.5 A concrete example of applying the Kafka event streaming platform
+    - Summary
+  - 2 Kafka brokers
+    - 2.1 Introducing Kafka brokers
+    - 2.2 Produce requests
+    - 2.3 Fetch requests
+    - 2.4 Topics and partitions
+    - 2.5 Sending your first messages
+    - 2.6 Segments
+    - 2.7 Tiered storage
+    - 2.8 Cluster metadata
+    - 2.9 Leaders and followers
+    - 2.10 Checking for a healthy broker
+    - Summary
+- Part 2
+  - 3 Schema Registry
+    - 3.1 Objects
+    - 3.2 What is a schema, and why do you need one?
+    - 3.3 Subject name strategies
+    - 3.4 Schema compatibility
+    - 3.5 Schema references
+    - 3.6 Schema references and multiple events per topic
+    - 3.7 Schema Registry (de)serializers
+    - 3.8 Serialization without Schema Registry
+    - Summary
+  - 4 Kafka clients
+    - 4.1 Introducing Kafka clients
+    - 4.2 Producing records with the KafkaProducer
+    - 4.3 Consuming records with the KafkaConsumer
+    - 4.4 Exactly-once delivery in Kafka
+    - 4.5 Using the Admin API for programmatic topic management
+    - 4.6 Handling multiple event types in a single topic
+    - Summary
+  - 5 Kafka Connect
+    - 5.1 An introduction to Kafka Connect
+    - 5.2 Integrating external applications into Kafka
+    - 5.3 Getting started with Kafka Connect
+    - 5.4 Applying Single Message Transforms
+    - 5.5 Adding a sink connector
+    - 5.6 Building and deploying your own connector
+    - Summary
+- Part 3
+  - 6 Developing Kafka Streams
+    - 6.1 A look at Kafka Streams
+    - 6.2 Kafka Streams DSL
+    - 6.3 Hello World for Kafka Streams
+    - 6.4 Masking credit card numbers and tracking purchase rewards in a retail sales setting
+    - 6.5 Interactive development
+    - 6.6 Choosing which events to process
+    - Summary
+  - 7 Streams and state
+    - 7.1 Stateful vs. stateless
+    - 7.2 Adding stateful operations to Kafka Streams
+    - 7.3 Stream-stream joins
+    - 7.4 State stores in Kafka Streams
+    - Summary
+  - 8 The KTable API
+    - 8.1 KTable: The update stream
+    - 8.2 KTables are stateful
+    - 8.3 The KTable API
+    - 8.4 KTable aggregations
+    - 8.5 GlobalKTable
+    - 8.6 Table joins
+    - Summary
+  - 9 Windowing and timestamps
+    - 9.1 Understanding the role of windows and the different types
+    - 9.2 Handling out order data with grace—literally
+    - 9.3 Final windowed results
+    - 9.4 Timestamps in Kafka Streams
+    - 9.5 The TimestampExtractor
+    - 9.6 Stream time
+    - Summary
+  - 10 The Processor API
+    - 10.1 Working with sources, processors, and sinks to create a topology
+    - 10.2 Digging deeper into the Processor API with a stock analysis processor
+    - 10.3 Data-driven aggregation
+    - 10.4 Integrating the Processor API and the Kafka Streams API
+    - Summary
+  - 11 ksqlDB
+    - 11.1 Understanding ksqlDB
+    - 11.2 More about streaming queries
+    - 11.3 Persistent vs. push vs. pull queries
+    - 11.4 Creating Streams and Tables
+    - 11.5 Schema Registry integration
+    - 11.6 ksqlDB advanced features
+    - Summary
+  - 12 Spring Kafka
+    - 12.1 Introducing Spring
+    - 12.2 Using Spring to build Kafka-enabled applications
+    - 12.3 Spring Kafka Streams
+    - Summary
+  - 13 Kafka Streams Interactive Queries
+    - 13.1 Kafka Streams and information sharing
+    - 13.2 Learning about Interactive Queries
+    - Summary
+  - 14 Testing
+    - 14.1 Understanding the difference between unit and integration testing
+    - Summary
