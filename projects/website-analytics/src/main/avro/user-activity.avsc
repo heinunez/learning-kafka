@@ -1,0 +1,10 @@
+{
+  "namespace": "com.heinunez.analytics.avro",
+  "type": "record",
+  "name": "UserActivityAvro",
+  "fields": [
+    { "name": "userId", "type": "string" },
+    { "name": "page", "type": "string" },
+    { "name": "timestamp", "type": "long", "default": 0 }
+  ]
+}
