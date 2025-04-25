@@ -1,0 +1,21 @@
+id,room,type,value,timestamp
+temp-2,bathroom,temperature,3.3,1719814300000
+temp-3,dining room,temperature,16.6,1735267854000
+temp-2,office,temperature,6.6,1720210995000
+temp-5,bathroom,temperature,10.1,1739141943000
+temp-4,dining room,temperature,11.0,1741530797000
+temp-2,kitchen,temperature,24.3,1721145001000
+temp-5,bathroom,temperature,14.9,1743350913000
+temp-4,dining room,temperature,10.3,1726099420000
+temp-5,dining room,temperature,13.5,1738352082000
+temp-5,office,temperature,23.0,1745220256000
+temp-1,office,temperature,19.0,1719536562000
+temp-5,bedroom,temperature,6.6,1717240729000
+temp-3,garage,temperature,16.3,1732505530000
+temp-5,garage,temperature,17.2,1717057402000
+temp-1,kitchen,temperature,12.4,1741511418000
+temp-2,garage,temperature,15.2,1733218254000
+temp-2,bathroom,temperature,20.9,1733169234000
+temp-3,kitchen,temperature,8.5,1736530363000
+temp-1,dining room,temperature,9.2,1729318587000
+temp-5,kitchen,temperature,24.6,1720772045000

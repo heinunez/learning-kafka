@@ -5,3 +5,4 @@ projects/**/.settings
 projects/**/target
 projects/**/.classpath
 projects/**/.project
+projects/**/.factorypath

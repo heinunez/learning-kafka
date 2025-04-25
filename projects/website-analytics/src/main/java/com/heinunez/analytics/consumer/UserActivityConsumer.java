@@ -1,6 +1,7 @@
 package com.heinunez.analytics.consumer;
 
 import com.heinunez.analytics.avro.UserActivityAvro;
+import com.heinunez.kafka.consumer.BaseConsumer;
 import io.confluent.kafka.serializers.KafkaAvroDeserializer;
 import io.confluent.kafka.serializers.KafkaAvroDeserializerConfig;
 import java.util.HashMap;
@@ -35,7 +36,8 @@ public class UserActivityConsumer extends BaseConsumer {
                 cr -> {
                   var ua = cr.value();
                   log.info(
-                      "found user activity {} - {} - {}",
+                      "found user activity [{}] {} - {} - {}",
+                      cr.key(),
                       ua.getUserId(),
                       ua.getPage(),
                       ua.getTimestamp());

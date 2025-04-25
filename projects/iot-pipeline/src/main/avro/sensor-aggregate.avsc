@@ -1,0 +1,10 @@
+{
+  "namespace": "com.heinunez.iot.avro",
+  "type": "record",
+  "name": "SensorAggregateAvro",
+  "fields": [
+    { "name": "sum", "type": "double", "default": 0 },
+    { "name": "count", "type": "int", "default": 0 },
+    { "name": "avg", "type": "double", "default": 0 }
+  ]
+}

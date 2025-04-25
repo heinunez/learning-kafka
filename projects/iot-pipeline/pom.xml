@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.heinunez.analytics</groupId>
-  <artifactId>website-analytics</artifactId>
+  <groupId>com.heinunez.iot</groupId>
+  <artifactId>iot-pipeline</artifactId>
   <packaging>jar</packaging>
   <parent>
     <groupId>com.heinunez</groupId>
@@ -25,6 +25,18 @@
       <artifactId>kafka-avro-serializer</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka-streams</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.confluent</groupId>
+      <artifactId>kafka-streams-avro-serde</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.opencsv</groupId>
+      <artifactId>opencsv</artifactId>
+    </dependency>
+    <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
     </dependency>
@@ -44,10 +56,12 @@
         <artifactId>kafka-schema-registry-maven-plugin</artifactId>
         <configuration combine.children="append">
           <subjects>
-            <user-activity-value>src/main/avro/user-activity.avsc</user-activity-value>
+            <sensor-data-value>src/main/avro/sensor-data.avsc</sensor-data-value>
+            <sensor-aggregate-value>src/main/avro/sensor-aggregate.avsc</sensor-aggregate-value>
           </subjects>
           <schemaTypes>
-            <user-activity-value>AVRO</user-activity-value>
+            <sensor-data-value>AVRO</sensor-data-value>
+            <sensor-aggregate-value>AVRO</sensor-aggregate-value>
           </schemaTypes>
         </configuration>
         <goals>
@@ -79,16 +93,16 @@
               <goal>java</goal>
             </goals>
             <configuration>
-              <mainClass>com.heinunez.analytics.producer.UserActivityProducer</mainClass>
+              <mainClass>com.heinunez.iot.producer.SensorDataProducer</mainClass>
             </configuration>
           </execution>
           <execution>
-            <id>consumer</id>
+            <id>stream</id>
             <goals>
               <goal>java</goal>
             </goals>
             <configuration>
-              <mainClass>com.heinunez.analytics.consumer.UserActivityConsumer</mainClass>
+              <mainClass>com.heinunez.iot.stream.SensorDataStream</mainClass>
             </configuration>
           </execution>
         </executions>

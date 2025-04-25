@@ -1,6 +1,7 @@
 package com.heinunez.analytics.producer;
 
 import com.heinunez.analytics.avro.UserActivityAvro;
+import com.heinunez.kafka.producer.BaseProducer;
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
 import java.util.ArrayList;
 import java.util.List;

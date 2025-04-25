@@ -1,4 +1,4 @@
-package com.heinunez.analytics.producer;
+package com.heinunez.kafka.producer;
 
 import java.util.HashMap;
 import java.util.List;

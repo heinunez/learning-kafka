@@ -1,4 +1,4 @@
-package com.heinunez.analytics.consumer;
+package com.heinunez.kafka.consumer;
 
 import io.confluent.kafka.serializers.AbstractKafkaSchemaSerDeConfig;
 import java.time.Duration;

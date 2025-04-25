@@ -1,0 +1,12 @@
+{
+  "namespace": "com.heinunez.iot.avro",
+  "type": "record",
+  "name": "SensorDataAvro",
+  "fields": [
+    { "name": "sensorId", "type": "string" },
+    { "name": "room", "type": "string" },
+    { "name": "type", "type": "string" },
+    { "name": "temperature", "type": "double", "default": 0 },
+    { "name": "timestamp", "type": "long", "default": 0 }
+  ]
+}

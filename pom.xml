@@ -12,9 +12,12 @@
     <avro.version>1.12.0</avro.version>
     <avro.schema-registry.version>7.9.0</avro.schema-registry.version>
     <log4j.version>2.24.3</log4j.version>
+    <opencsv.version>5.10</opencsv.version>
   </properties>
   <modules>
+    <module>projects/kafka-commons</module>
     <module>projects/website-analytics</module>
+    <module>projects/iot-pipeline</module>
   </modules>
   <repositories>
     <repository>
@@ -33,6 +36,21 @@
         <groupId>io.confluent</groupId>
         <artifactId>kafka-avro-serializer</artifactId>
         <version>${avro.schema-registry.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.kafka</groupId>
+        <artifactId>kafka-streams</artifactId>
+        <version>4.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.confluent</groupId>
+        <artifactId>kafka-streams-avro-serde</artifactId>
+        <version>7.9.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.opencsv</groupId>
+        <artifactId>opencsv</artifactId>
+        <version>${opencsv.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
