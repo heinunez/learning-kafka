@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "namespace": "com.heinunez.ecommerce.avro",
+  "name": "PaymentAvro",
+  "fields": [
+    { "name": "paymentId", "type": "string" },
+    { "name": "orderId", "type": "string" },
+    { "name": "status", "type": "string" },
+    { "name": "timestamp", "type": "long" }
+  ]
+}

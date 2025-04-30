@@ -18,6 +18,7 @@
     <module>projects/kafka-commons</module>
     <module>projects/website-analytics</module>
     <module>projects/iot-pipeline</module>
+    <module>projects/ecommerce</module>
   </modules>
   <repositories>
     <repository>

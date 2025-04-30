@@ -4,6 +4,7 @@ import io.confluent.kafka.serializers.AbstractKafkaSchemaSerDeConfig;
 import java.time.Duration;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -27,6 +28,13 @@ public class BaseConsumer {
       final Map<String, Object> configs,
       final String topic,
       final Consumer<ConsumerRecords<K, V>> recordsHandler) {
+    runConsumer(configs, Collections.singletonList(topic), recordsHandler);
+  }
+
+  public <K, V> void runConsumer(
+      final Map<String, Object> configs,
+      final List<String> topics,
+      final Consumer<ConsumerRecords<K, V>> recordsHandler) {
     var genericConfigs = overrideConfigs(configs);
 
     log.info("getting ready to consume records");
@@ -35,7 +43,7 @@ public class BaseConsumer {
     int noRecordsCount = 0;
 
     try (final var consumer = new KafkaConsumer<K, V>(genericConfigs)) {
-      consumer.subscribe(Collections.singletonList(topic));
+      consumer.subscribe(topics);
       while (notDoneConsuming) {
         var consumerRecords = consumer.poll(Duration.ofSeconds(10));
 

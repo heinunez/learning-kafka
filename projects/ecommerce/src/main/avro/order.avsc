@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "namespace": "com.heinunez.ecommerce.avro",
+  "name": "OrderAvro",
+  "fields": [
+    { "name": "orderId", "type": "string" },
+    { "name": "userId", "type": "string" },
+    { "name": "amount", "type": "double" },
+    { "name": "timestamp", "type": "long" }
+  ]
+}
